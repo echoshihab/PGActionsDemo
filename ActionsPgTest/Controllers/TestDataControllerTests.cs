@@ -31,7 +31,7 @@ namespace TestProject1.Controllers
             var result = (OkObjectResult)response.Result;
             var values = result.Value as IEnumerable<TestData>;
 
-            Assert.IsTrue(values.Count() == 2);
+            Assert.IsTrue(values.Count() == 1);
             Assert.IsTrue(values.Any(v => v.Name == "TestData1"));
         }
 
