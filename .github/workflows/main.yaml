@@ -41,5 +41,5 @@ jobs:
         run: dotnet build
         
       - name: test project
-        run: dotnet test
+        run: dotnet test -v:detailed
 
